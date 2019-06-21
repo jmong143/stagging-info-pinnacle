@@ -1,0 +1,26 @@
+<div class="app-exclusive">
+  <div class="columns">
+    <div class="column">
+      <img src="../../../../assets/img/mobile.png" alt="" />
+    </div>
+    <div class="column feature-col">
+      <div class="columns">
+        <div class="column is-3">
+            <img src="../../../../assets/img/mobile-ico.png" alt="">
+        </div>
+        <div class="column">
+            <h1 class="title">EXCLUSIVE</h1>
+            <h1>ACCESS TO THE</h1>
+            <img src="../../../../assets/img/title-wo-sub.png" alt="" />
+            <h1>REVIEW APP</h1>
+        </div>
+      </div>
+      
+      <ul>
+        <li *ngFor="let feature of features">
+          <i class="fas fa-check"></i> &nbsp; {{ feature }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

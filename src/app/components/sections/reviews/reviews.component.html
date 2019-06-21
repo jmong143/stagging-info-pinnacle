@@ -1,0 +1,223 @@
+<div>
+  <div class="columns team">
+    <div class="bg"></div>
+    <div class="column is-one-quarter side">
+      <img src="../../../../assets/img/reviewers.png" alt="" srcset="" />
+    </div>
+    <div class="column">
+      <div class="title">
+        <h1 class="outstanding">OUTSTANDING</h1>
+        <h1>REVIEWERS</h1>
+      </div>
+      <div class="paragraph">
+        <p>
+          Our team is composed of young, experienced, and high-caliber
+          <strong>CPA Board Exam topnotchers.</strong>
+        </p>
+        <p>
+          Our reviewers have <strong>teaching background</strong> and came from
+          <strong>UP Diliman</strong>, the
+          <strong>consistent top performing school</strong> in October boards.
+        </p>
+        <p>
+          As topnotchers themselves, they offer
+          <strong>1-on-1 mentorship</strong>
+          to those aiming to top the boards.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns background">
+    <div class="bg"></div>
+    <div class="column is-one-quarter side">
+      <img src="../../../../assets/img/reviewers.png" alt="" srcset="" />
+    </div>
+    <div class="column">
+      <div class="title">
+        <h1 class="outstanding">OUTSTANDING</h1>
+        <h1>REVIEWERS</h1>
+      </div>
+      <div class="paragraph">
+        <p>
+          <strong>Regardless of your accounting background</strong>, our
+          reviewers will provide you with the
+          <strong>most efficient and effective review</strong> by:
+        </p>
+        <ul>
+          <li>
+            <td class="checked-bullet">
+              <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+              Focusing on <strong>key points to remember</strong> and
+              <strong>common mistakes</strong> per topic
+            </td>
+          </li>
+          <li>
+            <td class="checked-bullet">
+              <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+              Teaching you <strong>shortcuts</strong> and
+              <strong>best strategies</strong> in solving difficult,
+              time-consuming problems.
+            </td>
+          </li>
+          <li>
+            <td class="checked-bullet">
+              <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+              Sharing you the <strong>best ways to study</strong> inside and
+              outside the review school, enabling you to at least
+              <strong>double your efficiency</strong>.
+            </td>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns founder-section">
+    <div class="bg-founder"></div>
+    <div class="column is-1 side-founder">
+      <img src="../../../../assets/img/reviewers.png" alt="" srcset="" />
+      <h1>OUTSTANDING REVIEWERS</h1>
+    </div>
+    <div class="column is-3 founder-img">
+      <img src="{{ founder.image }}" alt="" />
+    </div>
+    <div class="column founder-info">
+      <div class="founter">
+        <h1 class="name">{{ founder.name }}</h1>
+        <h2 class="position">{{ founder.position }}</h2>
+      </div>
+      <div class="founder-desc">
+        <ul>
+          <li *ngFor="let achievement of founder.achievements; let i = index">
+            {{ achievement.description }}
+
+            <ul *ngIf="achievement.specificDescription.length > 0">
+              <li
+                *ngFor="
+                  let specificDesc of achievement.specificDescription;
+                  let x = index
+                "
+              >
+                {{ specificDesc.description }}
+
+                <ul>
+                  <li *ngFor="let sd of specificDesc.otherDescription">
+                    {{ sd }}
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns founder-section">
+    <div class="bg-founder"></div>
+    <div class="column is-1 side-founder">
+      <img src="../../../../assets/img/reviewers.png" alt="" srcset="" />
+      <h1>OUTSTANDING REVIEWERS</h1>
+    </div>
+    <div class="column co-founders-info">
+      <div class="co-table">
+        <div class="columns">
+          <div
+            class="column co-founder"
+            *ngFor="let coFounder of coFounders; let i = index"
+          >
+            <img src="{{ coFounder.image }}" alt="" />
+            <div class="co-name">
+              <h1>{{ coFounder.name }}</h1>
+              <h2>{{ coFounder.position }}</h2>
+              <div class="co-achievements">
+                <ul>
+                  <li *ngFor="let achievements of coFounder.achievements">
+                    {{ achievements }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div
+            class="column co-founder"
+            *ngFor="let coFounder of coFoundersRow2; let i = index"
+          >
+            <img src="{{ coFounder.image }}" alt="" />
+            <div class="co-name">
+              <h1>{{ coFounder.name }}</h1>
+              <h2>{{ coFounder.position }}</h2>
+              <div class="co-achievements">
+                <ul>
+                  <li *ngFor="let achievements of coFounder.achievements">
+                    {{ achievements }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="review-program">
+  <div class="nav">
+    <h1>FLEXIBLE</h1>
+    <h2>REVIEW PROGRAMS</h2>
+    <img src="../../../../assets/img/book.png" alt="" srcset="" />
+  </div>
+  <p>
+    Pinnacle offers <strong>standard</strong> and
+    <strong>zero-based</strong> programs to accommodate reviewees with varying
+    levels of accounting mastery.
+  </p>
+  <div class="program-table">
+    <table>
+      <th>STANDARD</th>
+      <th></th>
+      <th>ZERO-BASED</th>
+
+      <tr>
+        <td>
+          Ideal for those who already have an average to solid background in
+          accounting
+        </td>
+        <td></td>
+        <td>
+          Ideal for those who prefer to start with the basics and fundamentals
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Typical review school format
+        </td>
+        <td></td>
+        <td>More extensive discussion, slower paced, and more exercises</td>
+      </tr>
+      <tr>
+        <td>
+          20 hours per week
+        </td>
+        <td></td>
+        <td>25 hours per week</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>

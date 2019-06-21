@@ -1,0 +1,43 @@
+@import '../../../../styles.scss';
+
+.app-exclusive {
+    
+    .column.is-3 {
+        margin-left: -80px;
+        img {
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+    h1.title {
+        font-weight: 800;
+        color: $yellow;
+        margin: 0;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        clear: both;
+    }
+    img {
+        float: right;
+    }
+
+    .feature-col {
+        img {
+            float: left;
+            height: 45px;
+        }
+
+        ul {
+            clear: both;
+            margin-top: 50px;
+            li {
+                .fa-check {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

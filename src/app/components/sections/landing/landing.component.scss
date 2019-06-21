@@ -1,0 +1,51 @@
+@import '../../../../styles.scss';
+
+.home-page {
+    .bg {
+        position: absolute;
+        left: 50%;
+        bottom: 13%;
+        height: 100%;
+        width: 50vw;
+        background-image: url("../../../../assets/img/bg-home.png");
+        background-size: cover;
+        // background-position: right;
+        background-repeat: no-repeat;
+    }
+    .landing {
+        height: 100vh;
+        position: relative;
+        .container {
+            height: 85vh;
+            position: relative;
+          }
+          
+          .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 20px;
+            p {
+                text-align: center;
+                font-size: 1.5em;
+
+                strong {
+                    font-size: 1em;
+                    color: $blue;
+                }
+            }
+          }
+
+        .contact {
+            padding: 20px 20px;
+            position: absolute;
+            bottom: 0;
+            background-color: $blue;
+            color: #fff;
+            width: 100%;
+            
+        }
+    }
+}

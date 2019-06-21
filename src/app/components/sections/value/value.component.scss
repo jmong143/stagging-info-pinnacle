@@ -1,0 +1,63 @@
+@import '../../../../styles.scss';
+
+.value {
+
+    position: relative;
+
+    .bg {
+        background-image: url("../../../../assets/img/bg-home.png");
+        background-size: cover;
+        left: 60%;
+        top: 145px;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    img, .header {
+        float: left;
+    }
+
+    .header {
+        margin-bottom: 120px;
+        h1 {
+            font-weight: 800;
+            color: $yellow;
+            font-size: 3rem;
+            margin-top: 25px;
+        }
+    }
+
+    img {
+        height: 140px;
+        margin-right: 20px;
+    }
+
+    .table {
+        clear: both;
+        margin: 20px auto;
+        font-size: 1.5rem;
+        width: 60%;
+
+        table {
+            width: 100%;
+            th {
+                background: $blue;
+                color: #fff;
+                text-align: center;
+            }
+            tr {
+                td {
+                    padding: 10px 20px;
+                    text-align: center;
+                    p  {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }  
+    }    
+}
+

@@ -1,0 +1,110 @@
+@import "../../../../styles.scss";
+
+.facilities {
+  position: relative;
+  .header {
+    position: relative;
+    img,
+    .title {
+        padding-top: 10px;
+      float: left;
+    }
+
+    img {
+      height: 160px;
+      width: 160px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-left: -10px;
+    }
+
+    .is-color-yellow {
+      color: $yellow;
+    }
+  }
+
+  img {
+    border-radius: 40px;
+    padding: 20px;
+    height: 300px;
+    width: 420px;
+  }
+
+  .table {
+    clear: both;
+
+    .class-room {
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 280px;
+      }
+      h1 {
+        z-index: 1;
+        padding: 10px;
+        border-radius: 10px;
+        background: $gray;
+        width: 50%;
+        color: #fff;
+        margin-left: 250px;
+        top: 40px;
+        position: absolute;
+        box-shadow: 1px 2px 3px black;
+      }
+    }
+
+    .glass-walled {
+      position: relative;
+      img {
+          bottom: 150px;
+          position: absolute;
+      }
+      h1 {
+        padding: 10px;
+        border-radius: 10px;
+        background: $gray;
+        width: 70%;
+        color: #fff;
+        bottom: 140px;
+        left: -150px;
+        position: absolute;
+        box-shadow: 1px 2px 3px black;
+      }
+    }
+
+    .parking {
+      position: relative;
+      
+      h1 {
+        position: absolute;
+        padding: 10px;
+        border-radius: 10px;
+        background: $gray;
+        width: 50%;
+        color: #fff;
+        bottom: 0;
+        right: 40px;
+        box-shadow: 1px 2px 3px black;
+      }
+    }
+
+    .new-building {
+      position: relative;
+      
+      h1 {
+        position: absolute;
+        padding: 10px;
+        border-radius: 10px;
+        background: $gray;
+        width: 50%;
+        color: #fff;
+        bottom: 0;
+        right: 40px;
+        box-shadow: 1px 2px 3px black;
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+@import '../../../../styles.scss';
+
+
+
+.team {
+    height: 100vh;
+    clear: both;
+    position: relative;
+
+    .bg {
+        background-image: url("../../../../assets/img/bg-home.png");
+        background-size: cover;
+        left: 60%;
+        top: 145px;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.background {
+    height: 100vh;
+    position: relative;
+    .bg {
+        background-image: url("../../../../assets/img/bg-home.png");
+        background-size: cover;
+        left: 60%;
+        top: 145px;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.side {
+    background-color:  $gray;
+    position: relative;
+    img {
+        position: absolute;
+        right: -110px;
+        top: 40px;
+    }
+}
+
+.column {
+    .title {
+        padding: 75px 145px 0 145px;
+        .outstanding {
+            color: $yellow;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin: 0;
+        }
+    }
+
+    .paragraph {
+        padding: 0 145px;
+        width: 65%;
+        p {
+            margin-bottom: 20px;
+        }
+
+        
+        .checked-bullet {
+            color: $yellow;
+        }
+    }
+}
+
+.founder-section {
+    height: 100vh;
+    .side-founder {
+        position: relative;
+        background: $gray;
+        h1 {
+            transform:rotate(-90deg);
+            position: absolute;
+            width: 100vh;
+            left: -41vh;
+            bottom: 370px;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #fff;
+        }
+        img {
+            position: absolute;
+            right: -65px;
+            top: 40px
+        }
+    }
+
+    .founder-img {
+        margin-top: 190px;
+    }
+    
+    .founder-info {
+        margin-top: 170px;
+    } 
+
+    .founder-img {
+        position: relative;
+
+        img {
+            height: 300px;
+            position: absolute;
+            left: 17%;
+        }
+    }
+
+    .name {
+        color: $blue;
+        font-size:2.5rem;
+        font-weight: 700;
+    }
+
+    .position {
+        border-bottom: 4px solid $yellow;
+        font-size: 1.5rem;
+        margin-left: 210px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-left: 20px;
+
+        li::before {
+            content: "\2022";
+            color: $yellow;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+    }
+
+}
+
+.co-founders-info {
+    position: relative;
+
+    .co-table {
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        img, .co-name {
+            float: left;
+        }
+    
+        img {
+            height: 180px;
+            padding: 10px;
+        }
+        
+        .co-name {
+            
+            h1 {
+                font-weight: 800;
+                color: $blue;
+            }
+        
+            h2 {
+                border-bottom: 5px solid $yellow;
+            }
+    
+            .co-achievements {
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+.review-program {
+
+    height: 100vh;
+    
+    .nav {
+        position: relative;
+        background: $gray;
+        height: 115px;
+        width: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 25%;
+        }
+
+        h1 , h2 {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin-left: 40%;
+            color: $yellow;
+            margin-top:  20px 0 -20px 0;
+        }
+
+        h2 {
+            margin-left: 43%;
+        }
+
+        
+    }
+
+    p {
+        width: 30%;
+        margin-left: 40%;
+        padding: 20px;
+    }
+
+    .program-table {
+        position: relative;
+        height: calc(100vh - 227px);
+        table {
+            left: 25%;
+            width: 50vw;
+            position: absolute;
+            bottom: 100px;
+
+            th:nth-child(2){
+                background-color: #fff;
+            }
+
+            th {
+                background: $blue;
+                padding: 10px;
+                text-align: center;
+                color: #fff;
+            }
+
+            tr:first-child {
+                background-color: lightgray;
+            }
+            tr:nth-child(3) {
+                background-color: lightgray;
+            }
+
+            tr:nth-child(4) {
+                background-color: $blue;
+            }
+            tr {
+                background-color: $gray;
+                margin: 0 20px;
+
+                td:nth-child(2){
+                    background-color: #fff;
+                    width: 80px;
+                }
+
+                td {
+                    margin: 0 20px;
+                padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,44 @@
+@import '../../../../../styles.scss';
+
+.experience-header {
+    height: 100vh;
+    background-image: url('../../../../../assets/img/ex-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    .vertical-center {
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 20px;
+
+        .column {
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 3rem;
+            font-weight: 800;
+            height: 60px;
+            
+            img {
+                height: 10vh;
+            }
+        }
+
+        .column.has-margin-right {
+            margin-right: 180px !important; 
+        }
+    
+        .is-11 {
+            color: $gray;
+        }
+    
+        .is-7 {
+            color: $yellow;
+        }
+    }
+}
+

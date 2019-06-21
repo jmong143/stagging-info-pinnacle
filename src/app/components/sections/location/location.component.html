@@ -1,0 +1,90 @@
+<div class="location">
+  <img src="../../../../assets/img/location-ico.png" alt="" />
+  <div class="title">
+    <h1>IDEAL</h1>
+    <h1>LOCATION</h1>
+  </div>
+
+  <div class="columns location-info">
+    <div class="column time is-desktop">
+      <h1>10-15</h1>
+      <h2>MINS</h2>
+      <p>from major malls and stations</p>
+      <ul>
+        <li><i class="fas fa-check"></i>&nbsp;&nbsp;Safe</li>
+        <li><i class="fas fa-check"></i>&nbsp;&nbsp;Quiet</li>
+        <li>
+          <i class="fas fa-check"></i>&nbsp;&nbsp;Access to all reviewees’ needs
+        </li>
+      </ul>
+    </div>
+    <div class="column nearby-places-logo-upper is-desktop">
+      <img src="../../../../assets/img/logo/sm north edsa.jpg" alt="" />
+      <img src="../../../../assets/img/logo/trinoma.jpg" alt="" />
+      <img src="../../../../assets/img/logo/vertis north.png" alt="" />
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2138134361307!2d121.05873951468945!3d14.643800889774948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b774391fb123%3A0xd3de23594ddacd2d!2s128+Maginhawa%2C+Diliman%2C+Lungsod+Quezon%2C+Kalakhang+Maynila!5e0!3m2!1sen!2sph!4v1560984233469!5m2!1sen!2sph"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+      <div>
+        <img src="../../../../assets/img/logo/uptown center.jpg" alt="" />
+        <span>LRT 2 Katipunan</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nearby-places">
+  <div class="columns is-multiline">
+    <div class="column" *ngFor="let nearbyPlace of nearbyPlaces">
+      <img src="{{ nearbyPlace.image }}" alt="" />
+      <h1>{{ nearbyPlace.title }}</h1>
+      <span class="description" *ngFor="let name of nearbyPlace.names"
+        >{{ name }},
+      </span>
+      <p class="description">{{ nearbyPlace.description }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-building">
+  <div class="accommodation-title">
+    <img src="../../../../assets/img/accommodation.png" alt="" />
+    <div class="header">
+      <h1 class="hassle-free">HASSLE-FREE</h1>
+      <h1>ACCOMMODATION</h1>
+    </div>
+  </div>
+  <div class="columns accommodation-ben">
+    <div class="column">
+     
+        <ul>
+            <li *ngFor="let accommodation of accommodations">
+              {{ accommodation }}
+            </li>
+          </ul>
+          <img src="../../../../assets/img/buildings/building 4.jpg" alt=""> <img src="../../../../assets/img/buildings/building 5.jpg" alt="">
+    </div>
+    <div class="column">
+      <div class="floating-header">
+        <h1>
+          AS LOW AS
+        </h1>
+        <h1>
+          P2.5-3k
+        </h1>
+        <h5>
+            per person per month
+        </h5>
+      </div>
+      <div class="buildings">
+        <img class="image-v" *ngFor="let nearbyResidence of nearbyResidences" src="{{nearbyResidence}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
