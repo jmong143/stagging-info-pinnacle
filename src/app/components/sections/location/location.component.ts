@@ -30,37 +30,37 @@ export class LocationComponent implements OnInit {
       {
         title : "Coffee and Tea",
         image : "../../../../assets/img/icons/coffee.png",
-        names : ["Starbucks", "asdas"]
+        description : "Starbucks, Coffee Bean"
       },
       {
         title : "Fitness",
         image : "../../../../assets/img/icons/fitness.png",
-        names : ["Muscle Up", "Pound-for-Pound", "Elorder", "Anytime Fitness"]
+        description : "Muscle Up, Pound-for-Pound, Elorder, Anytime Fitness"
       },
       {
         title : "Bank",
         image : "../../../../assets/img/icons/bank.png",
-        names : ["BPI", "BDO", "RCBC", "Eastwest Bank", "China Bank", "Metrobank","Security Bank"]
+        description : "BPI, BDO, RCBC, Eastwest Bank, China Bank, Metrobank,Security Bank"
       },
       {
         title : "Supermarket",
         image : "../../../../assets/img/icons/supermarket.png",
-        names : ["Savemore", "Shopwise"]
+        description : "Savemore, Shopwise"
       },
       {
         title : "Internet",
         image : "../../../../assets/img/icons/internet.png",
-        names : ["Minesky Infinity", "GG80 Internet Cafe"]
+        description : "Minesky Infinity, GG80 Internet Cafe"
       },
       {
         title : "Laundry",
         image : "../../../../assets/img/icons/laundry.png",
-        names : ["Quick Clean"]
+        description : "Quick Clean"
       },
       {
         title : "Recreation",
         image : "../../../../assets/img/icons/recreational.png",
-        names : ["Snacks & Ladder", "Laruan"]
+        description : "Snacks & Ladder, Laruan"
       },
       {
         title : "Church",
@@ -70,10 +70,7 @@ export class LocationComponent implements OnInit {
       {
         title : "Hatch Hub",
         image : "../../../../assets/img/icons/hatch-hub.png",
-        names : [
-          "WIP PH",
-          "Think Spot"
-        ]
+        description : "WIP PH, Think Spot"
       }
     ]
 

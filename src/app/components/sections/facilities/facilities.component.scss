@@ -2,6 +2,7 @@
 
 .facilities {
   position: relative;
+  height: 100vh;
   .header {
     position: relative;
     img,
@@ -29,8 +30,8 @@
   img {
     border-radius: 40px;
     padding: 20px;
-    height: 300px;
-    width: 420px;
+    height: 250px;
+    width: 370px;
   }
 
   .table {
@@ -107,4 +108,23 @@
       }
     }
   }
+  .go-up {
+    a {
+        position: absolute;
+        color: $blue;
+        font-size: 3rem;
+        right: 10px;
+        top: 10px;
+    }
+
+}
+  .goDown {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    a {
+        color: $blue;
+    }
+}
 }

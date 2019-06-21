@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+.mobile-view {
+    text-align: center;
+    position: relative;
+    .warning-if-not-desktop {
+        position: absolute;
+        width: 100%;
+        top: 30%;
+    }
+    .warning {
+        font-size: 3rem;
+    }
+
+    img {
+        height: 50px;
+    }
+}

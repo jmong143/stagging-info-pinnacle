@@ -44,4 +44,23 @@
     margin: 50px;
     
   }
+  .go-up {
+    a {
+        position: absolute;
+        color: $blue;
+        font-size: 3rem;
+        right: 10px;
+        top: 10px;
+    }
+
+}
+  .goDown {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    a {
+        color: $blue;
+    }
+}
 }

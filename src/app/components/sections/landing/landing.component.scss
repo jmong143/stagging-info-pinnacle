@@ -48,4 +48,14 @@
             
         }
     }
+
+    .goDown {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        a {
+            color: #fff;
+        }
+    }
 }

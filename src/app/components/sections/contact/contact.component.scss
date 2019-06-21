@@ -1,7 +1,16 @@
 @import '../../../../styles.scss';
 
 .contact {
-    padding: 60px;
+    height: 100vh;
+    display: table;
+    position: absolute;
+    width: 100%;
+    
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 100px;
+    }
     h1 {
         font-weight: 800;
         font-size: 1.5rem;
@@ -21,5 +30,15 @@
         .fas {
             width: 30px
         }
+    }
+
+    .go-up {
+        a {
+            position: absolute;
+            color: #fff;
+            font-size: 3rem;
+            right: 10px;
+        }
+
     }
 }

@@ -1,42 +1,48 @@
-<div class="contact">
-  <div class="columns">
-    <div class="column">
-      <div class="reservation-info">
-        <h1>RESERVE NOW</h1>
-        <p>Contact <strong>Brad dela Cruz</strong> at:</p>
-        <ul>
-          <li>
-            <i class="fas fa-mobile-alt"></i> 63 9176294875
-          </li>
-          <li>
-              <i class="fas fa-envelope"></i> brad.delacruz@pinnaclecpareview.com
-          </li>
-        </ul>
-        <h1>Or visit:</h1>
-        <ul>
-          <li>
-              <i class="fas fa-globe"></i> pinnaclecpareview.com
-          </li>
-          <li>
-              <i class="fab fa-facebook-square"></i> facebook.com/pinnaclecpareview
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="column is-7 message-us">
-      <h1>MESSAGE US:</h1>
-    
-      <label for="name">Name</label>
-      <input class="input" type="text"  placeholder="Name:" [(ngModel)]="data.name" />
-      <br>
-      <label for="email">Email</label>
-      <input class="input" type="email" name="email" placeholder="example@pinnaclecpareview.com" [(ngModel)]="data.email">
-      <br>
-      <label for="message">Message</label>
-      <textarea class="textarea" name="message" id="" cols="30" rows="3" placeholder="Your message" [(ngModel)]="data.message"></textarea>
-      <br>
-      <button class="button" (click)="sendMessage()">Send</button>
-    
-    </div>
+<div id="contact" class="contact">
+  <div class="container">
+      <div class="columns">
+          <div class="column">
+            <div class="reservation-info">
+              <h1>RESERVE NOW</h1>
+              <p>Contact <strong>Brad dela Cruz</strong> at:</p>
+              <ul>
+                <li>
+                  <i class="fas fa-mobile-alt"></i> 63 9176294875
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i> brad.delacruz@pinnaclecpareview.com
+                </li>
+              </ul>
+              <br>
+              <h1>Or visit:</h1>
+              <ul>
+                <li>
+                    <i class="fas fa-globe"></i> pinnaclecpareview.com
+                </li>
+                <li>
+                    <i class="fab fa-facebook-square"></i> facebook.com/pinnaclecpareview
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-7 message-us">
+            <h1>MESSAGE US:</h1>
+          
+            <label for="name">Name</label>
+            <input class="input" type="text"  placeholder="Name:" [(ngModel)]="data.name" />
+            <br>
+            <label for="email">Email</label>
+            <input class="input" type="email" name="email" placeholder="example@pinnaclecpareview.com" [(ngModel)]="data.email">
+            <br>
+            <label for="message">Message</label>
+            <textarea class="textarea" name="message" id="" cols="30" rows="3" placeholder="Your message" [(ngModel)]="data.message"></textarea>
+            <br>
+            <button class="button" (click)="sendMessage()" style="width: 100%;">Send</button>
+          
+          </div>
+        </div>
+  </div>
+  <div class="go-up">
+    <a href="#value"><i class="fas fa-chevron-circle-up"></i></a>
   </div>
 </div>

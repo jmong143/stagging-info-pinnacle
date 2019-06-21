@@ -1,12 +1,25 @@
 <div>
-  <app-landing></app-landing>
-  <app-goals></app-goals>
-  <app-header></app-header>
-  <app-content></app-content>
-  <app-reviews></app-reviews>
-  <app-exclusive></app-exclusive>
-  <app-facilities></app-facilities>
-  <app-location></app-location>
-  <app-value></app-value>
-  <app-contact></app-contact>
+ 
+  <div class="is-hidden-touch">
+    <app-landing></app-landing>
+    <app-goals></app-goals>
+    <app-header></app-header>
+    <app-content></app-content>
+    <app-reviews></app-reviews>
+    <app-exclusive></app-exclusive>
+    <app-facilities></app-facilities>
+    <app-location></app-location>
+    <app-value></app-value>
+    <app-contact></app-contact>
+  </div>
+
+  <div class="is-hidden-desktop mobile-view" style="height: 100vh">
+    <div class="warning-if-not-desktop">
+        <h1 class="warning"><i class="fas fa-exclamation-circle"></i></h1>
+        <h1>Pinnacle Info Website is exclusive for desktop viewing only.</h1>
+        <h1>Use the Pinnacle Mobile App instead.</h1>
+        <h1>Download the Pinnacle Mobile App</h1>
+        <a href="#"><img src="../../../../assets/img/playstore.png" alt=""></a>
+    </div>
+  </div>
 </div>

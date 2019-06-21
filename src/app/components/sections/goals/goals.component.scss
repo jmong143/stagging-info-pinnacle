@@ -43,4 +43,22 @@
   td {
     text-align: center;
   }
+  .go-up {
+    a {
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        right: 10px;
+    }
+
+}
+  .goDown {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    a {
+        color: #fff;
+    }
+}
 }

@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 
 .value {
-
+    height: 100vh;
     position: relative;
 
     .bg {
@@ -58,6 +58,26 @@
                 }
             }
         }  
-    }    
+    }  
+
+    .go-up {
+        a {
+            position: absolute;
+            color: $blue;
+            font-size: 3rem;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    
+    .goDown {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        a {
+            color: $blue;
+        }
+    }
 }
 

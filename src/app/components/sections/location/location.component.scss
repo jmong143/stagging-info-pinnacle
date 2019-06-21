@@ -2,6 +2,8 @@
 
 
 .location {
+    height: 100vh;
+    position: relative;
     padding: 20px;
     img, .title {
         float: left;
@@ -61,30 +63,59 @@
             padding: 20px;
         }
     }
-    
+    .go-up {
+        a {
+            position: absolute;
+            color: $blue;
+            font-size: 3rem;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .goDown {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        a {
+            color: $blue;
+        }
+    }
 }
 
 .nearby-places {
-    background-image: linear-gradient(#fff, gray);
+    height: 100vh;
+    position: relative;
+    background-image: url('../../../../assets/img/map-bg.PNG');
+    background-size: cover;
+
+    .title {
+        font-weight: 800;
+        padding: 20px;
+    }
+    
     .columns {
         display: flex;
+        margin: auto;
+        padding: 40px;
         .column {
             padding: 10px 20px;
             background: #fff;
-            margin: 50px;
+            margin: 10px 20px;
             border-radius: 10px;
             border: 2px dashed gray;
-            min-width: 300px;
-            height: 120px;
+            min-width: 200px;
+            box-shadow: 1px 2px 3px #a3a3a3;
             position: relative;
+            display: inline-table;
             img, p {
                 float: left;
             }
             img {
                 position: absolute;
-                top: -30px;
-                left: -30px;
-                height: 80px;
+                top: -10px;
+                left: -10px;
+                height: 70px;
                 margin-right: 20px;
             }
             h1 {
@@ -94,13 +125,33 @@
             .description {
                 margin-left: 50px;
                 word-wrap: break-word;
-                width: 300px;
+                // width: 300px;
             }
+        }
+    }
+    .go-up {
+        a {
+            position: absolute;
+            color: $blue;
+            font-size: 3rem;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .goDown {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        a {
+            color: $blue;
         }
     }
 }
 
 .bg-building {
+    height: 100vh;
+    position: relative;
     padding: 20px;
     .accommodation-title {
         img, .header {
@@ -128,6 +179,7 @@
         position: relative;
 
         ul {
+            margin-left: 50px;
             li {
 
                 list-style-type: disc;
@@ -141,22 +193,43 @@
             border-radius: 20px;
         }
 
+        .floating-header {
+
+            text-align: center;
+            h1 {
+                font-size: 2rem;
+font-weight: 800;    
+            }
+        }
+
         .buildings {
             text-align: center;
             .image-v {
                 margin: 10px;
-                height: 250px;
-                width: 200px;
+                height: 200px;
+                width: 180px;
                 border-radius: 20px;
             }
         }
 
-        .floating-header {
-            position: absolute;
-            top: -120px;
-            right: 200px;
-        }
-
         
+    }
+    .go-up {
+        a {
+            position: absolute;
+            color: $blue;
+            font-size: 3rem;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .goDown {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        a {
+            color: $blue;
+        }
     }
 }

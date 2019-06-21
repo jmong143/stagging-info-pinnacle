@@ -4,3 +4,16 @@
 $blue : #003469;
 $yellow : #FFDC00;
 $gray : #a6a6a6;
+
+.is-text-yellow {
+    color: $yellow;
+}
+
+.is-text-gray {
+    color: $gray;
+}
+
+
+.is-text-blue {
+    color: $blue;
+}
